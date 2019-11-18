@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="Scripts.js"></script>
+    <script type="text" src="Estilo.css"></script>
+    <title>Ejercicio 7</title>
+</head>
+
+<body>
+    <div class="container">
+        <table class="table text-center">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Edad</th>
+                    <th>Opciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="fila1">
+                    <th>David</th>
+                    <th>Ramirez</th>
+                    <th>17</th>
+                    <th><button id="asociar1" class="btn btn-primary">Asociar</button>
+                        <button id="desasociar1" class="btn btn-secondary">Desasociar</button></th>
+                </tr>
+                <tr id="fila2">
+                    <th>Juan</th>
+                    <th>River</th>
+                    <th>30</th>
+                    <th><button id="asociar2" class="btn btn-primary">Asociar</button>
+                        <button id="desasociar2" class="btn btn-secondary">Desasociar</button></th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#asociar1").click(function () {
+                $("#fila1").css("background-color", "yellow");
+            });
+
+            $("#asociar2").click(function () {
+                $("#fila2").css("background-color", "green");
+            });
+
+            $("#desasociar1").click(function () {
+                $("#fila1").css("background-color", "");
+            });
+
+            $("#desasociar2").click(function () {
+                $("#fila2").css("background-color", "");
+            });
+        });
+    </script>
+
+</body>
+
+</html>

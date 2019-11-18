@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="Scripts.js"></script>
+    <script type="text" src="Estilo.css"></script>
+    <title>Ejercicio 4</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container">
+            <div>
+                <button id="boton1" class="btn btn-primary">Parrafo 1</button>
+            </div>
+            <p id="noticia1">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Voluptas, maxime, quam ullam nam saepe molestiae quisquam
+                itaque dolore earum dolor praesentium non debitis voluptates
+                alias odio? Quia quo corrupti vero?</p>
+
+        </div>
+        <br>
+        <div class="container">
+            <div>
+                <button id="boton2" class="btn btn-primary">Parrafo 2</button>
+            </div>
+            <p id="noticia2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Esse officia id quos enim aliquam aspernatur soluta
+                consectetur dicta, corrupti, cumque ex, omnis voluptatem
+                sint. Illo labore facere eaque iure quae.</p>
+
+        </div>
+        <br>
+        <div class="container">
+            <div>
+                <button id="boton3" class="btn btn-primary">Parrafo 3</button>
+            </div>
+            <p id="noticia3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestiae tenetur, dolores cum hic autem quasi sunt
+                voluptatum veniam laboriosam officia, porro ea illum,
+                voluptates iste saepe corrupti optio ad accusamus?</p>
+
+        </div>
+    </div>
+    <br>
+
+    <script>
+        $(document).ready(function () {
+            $("#boton1").click(function () {
+                $("#noticia1").css("font-size", "20px")
+            });
+            $("#boton2").click(function () {
+                $("#noticia2").css("font-size", "25px");
+            });
+            $("#boton3").click(function () {
+                $("#noticia3").css("font-size", "30px");
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>

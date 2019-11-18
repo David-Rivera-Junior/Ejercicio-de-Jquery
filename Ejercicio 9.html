@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="Scripts.js"></script>
+    <script type="text" src="Estilo.css"></script>
+    <title>Ejercicio 9</title>
+</head>
+
+<body style="background-color: aqua;">
+    <div class="container" style="width: 800px; height: 70px;">
+        <div class="container" id="contenedor" style="width: 800px; height: 70px;">
+            
+            <h5 id="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Eveniet, dolores quo accusamus voluptatibus facere
+                asperiores autem blanditiis assumenda nemo, explicabo
+                laboriosam dignissimos doloribus alias perferendis officia
+                doloremque sunt possimus. Quae!</h5>
+        </div>
+    </div>
+    <br>
+
+    <script>
+        
+        $(document).ready(function () {
+            $("#content").dblclick(function () {
+                $("#contenedor").width(250);
+                $("#contenedor").heigth(250);
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

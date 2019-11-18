@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 1</title>
+</head>
+
+<body>
+    <div class="container">
+        <p id="parrafo1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perspiciatis dolor aspernatur, corporis totam reprehenderit
+            doloribus fugit veniam delectus sed rerum minus officiis,
+            quo quisquam maxime alias maiores neque. Illo, ad!</p>
+
+        <p id="parrafo2">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Repellendus dicta at beatae quis delectus dolorem fuga
+            error reprehenderit? Odit expedita corrupti illum minima
+            ratione nam. Recusandae necessitatibus unde rerum modi!</p>
+    </div>
+
+    <script>
+        var x;
+        x = $(document);
+        x.ready(inicializar);
+
+        function inicializar() {
+            var x;
+            x = $("#parrafo1");
+            x.click(presionar);
+        }
+        function presionar() {
+            var x;
+            x = $(this);
+            x.css("color", "red");
+        }
+/*        $(document).ready(function () {
+    $("#parrafo2").click(function () {
+        $(this).css("color", "green");
+    });
+});*/
+
+    </script>
+
+</body>
+
+</html>

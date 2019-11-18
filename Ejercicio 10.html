@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="Scripts.js"></script>
+    <script type="text" src="Estilo.css"></script>
+    <title>Ejercicio 10</title>
+</head>
+
+<body style="background-color:aquamarine">
+    <div class="container" id="contenedor2">
+        <h5 id="opcion1">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Eveniet, dolores quo accusamus voluptatibus facere
+            asperiores autem blanditiis assumenda nemo, explicabo
+            laboriosam dignissimos doloribus alias perferendis officia
+            doloremque sunt possimus. Quae!</h5>
+
+        <h5 id="opcion2" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Incidunt, sed in? Fugit quis esse quam blanditiis
+            quasi eveniet autem. Ab, magni perspiciatis eius ratione
+            esse excepturi qui culpa repellat delectus.</h5>
+
+        <h5 id="opcion3" style="display: none;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Facilis assumenda omnis tempora ullam sapiente natus dolorem,
+            distinctio a saepe recusandae deserunt labore blanditiis voluptate
+            aliquam porro veniam quia minima earum.</h5>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#opcion1").click(function () {
+                $(this).hide(4000);
+                $("#opcion2").show(4000);
+            });
+            $("#opcion2").click(function () {
+                $(this).hide(4000);
+                $("#opcion3").show(4000);
+            });
+            $("#opcion3").click(function () {
+                $(this).hide(4000);
+                $("#opcion1").show(4000);
+            });
+        });
+    </script>
+
+</body>
+
+</html>

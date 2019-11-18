@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="Scripts.js"></script>
+    <script type="text" src="Estilo.css"></script>
+    <title>Ejercicio 8</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <table class="table text-center">
+            <thead>
+                <tr>
+                    <th class="registro">nombre</th>
+                    <th class="registro">apellido</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th class="registro">fulano</th>
+                    <th class="registro">piedra</th>
+                </tr>
+                <tr>
+                    <th class="registro">mengano</th>
+                    <th class="registro">tierra</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $(".registro").mouseenter(function () {
+                $(this).css("background-color", "green");
+            });
+            $(".registro").mouseleave(function () {
+                $(this).css("background-color", "");
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="Scripts.js"></script>
+    <script type="text" src="Estilo.css"></script>
+    <title>Ejercicio 5</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <table class="table text-center">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Asignatura</th>
+                    <th>Comportamiento</th>
+                    <th>Nota</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th class="tabla1">Lenguaje</th>
+                    <th class="tabla1">Muy Bueno</th>
+                    <th class="tabla1">8</th>
+                </tr>
+                <tr>
+                    <th class="tabla1">Matematica</th>
+                    <th class="tabla1">Bueno</th>
+                    <th class="tabla1">6</th>
+                </tr>
+                <tr>
+                    <th class="tabla1">Ciencia</th>
+                    <th class="tabla1">Excelente</th>
+                    <th class="tabla1">9</th>
+                </tr>
+            </tbody>
+            <div>
+                <button id="boton" class="btn btn-primary">Tabla 1</button>
+            </div>
+        </table>
+
+        <div>
+            <table class="table text-center">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Asignatura</th>
+                        <th>Comportamiento</th>
+                        <th>Nota</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Sociales</th>
+                        <th>Bueno</th>
+                        <th>7</th>
+                    </tr>
+                    <tr>
+                        <th>Fisica</th>
+                        <th>Excelnete</th>
+                        <th>10</th>
+                    </tr>
+                    <tr>
+                        <th>Quimica</th>
+                        <th>Muy Bueno</th>
+                        <th>8</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#boton").click(function () {
+                $(".tabla1").text("-----");
+            });
+        });
+    </script>
+</body>
+
+</html>
